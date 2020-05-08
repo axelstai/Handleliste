@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import Icon from 'react-native-vector-icons/dist/FontAwesome';
+import Icon from 'react-native-vector-icons/dist/AntDesign';
 
 
 const ClearItems = ({ clearItems }) => {
@@ -10,7 +10,7 @@ const ClearItems = ({ clearItems }) => {
             <TouchableOpacity style={styles.btn} onPress={() => {
                 clearItems();
             }}>
-                <Text style={styles.btnText}>{<Icon name="plus" />} Slett liste</Text>
+                <Text style={styles.btnText}>{<Icon name="delete" size={20} />} Slett liste</Text>
             </TouchableOpacity>
         </View>
     );
