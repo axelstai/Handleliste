@@ -28,7 +28,9 @@ const App = () => {
   };
 
   const clearItems = () => {
-    setItems(() => { items.map(item => deleteItem(item.id)); });
+    if (items.length > 0) {
+      setItems(() => { items.map(item => deleteItem(item.id)); });
+    }
   };
 
 
